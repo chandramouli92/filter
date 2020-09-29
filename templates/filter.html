@@ -1,0 +1,30 @@
+{% load filter%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    {%if data|length > 10 %}
+    <h1>{{data|upper}} is more then 10 chanrenters</h1>
+    {%else%}
+    <h1>{{data}} is less then 100charecters</h1>
+    {%endif %}
+
+    <h1> your data lenth is {{data|length|add:10}}</h1>
+    <h2>{{a|add:10}}</h2>
+    <h1>{{data|upper}} in up[per case</h1>
+    <h1>{{data|lower}} in lower case</h1>
+    <h2>{{data|add:' welcome to page'}}</h2>
+    <h1>{{data|date:'28/09/2020 '|add:' this is the unforgetable year in your life'}}</h1>
+    <h1>{{a|add:b|add:c}}</h1>
+    <h1>{{data|is_upper}}</h1>
+    <h1>{{data|plural:"mango"}}</h1>
+
+
+
+    
+</body>
+</html>
